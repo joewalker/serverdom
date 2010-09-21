@@ -9,6 +9,9 @@ About ServerDOM
 ServerDOM is an implementation of the DOM in JavaScript that lives on the server
 rather than in the browser.
 
+ServerDOM uses tautologistics node-htmlparser to do the nasty work of HTML
+parsing.
+
 
 Why?
 ----
