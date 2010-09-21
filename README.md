@@ -24,6 +24,39 @@ work against. Enter ServerDOM to provide a minimalist browser environment so
 you can do progressive enhancement type things without writing everything twice.
 
 
+What is the Roadmap?
+--------------------
+
+If there's not much interest, the the roadmap ends here, because it's currently
+good enough for me, but if people like it then we can probably sort out some
+releases like "Supports JQuery v1.4", "Supports DOM levels 0-3" and so on. I
+will be relying on help making it better though.
+
+
+How do I get started?
+---------------------
+
+Step 1: Install [Node](http://nodejs.org/)
+
+Step 2: Install and use ServerDOM:
+
+    $ git clone git@github.com:joewalker/serverdom.git
+    Initialized empty Git repository in /.../serverdom/.git/
+    [blah blah]
+    $ cd serverdom
+    $ git clone http://github.com/tautologistics/node-htmlparser.git
+    Initialized empty Git repository in /.../serverdom/node-htmlparser/.git/
+    [blah blah]
+    $ node test/domtest.js
+    completed
+    $ vi test/domtest.js
+    "I see! It works like a browser DOM, but you start with 'new Document(...)'"
+
+To check that dom/js works in the same way as the browser, just load
+`test/test.html` into your browser. It will run the test suite against the a
+real DOM. The results should be the same.
+
+
 How good is it?
 ---------------
 
@@ -57,37 +90,6 @@ you can still use ServerDOM, but by fixing your script.
 
 (* I know why document.all behaves the way it does - sometimes it pays to
 pretend to be mad if you're dealing with someone that expects insanity - however
-that doesn't make the behaviour sane, only justifiably insane ;-)
-
-
-What is the Roadmap?
---------------------
-
-If there's not much interest, the the roadmap ends here, because it's currently
-good enough for me, but if people like it then we can probably sort out some
-releases like "Supports JQuery v1.4", "Supports DOM levels 0-3" and so on. I
-will be relying on help making it better though.
-
-
-How do I get started?
----------------------
-
-* Install [Node](http://nodejs.org/)
-* Install and use ServerDOM:
-
-    $ git clone git@github.com:joewalker/serverdom.git
-    Initialized empty Git repository in /.../serverdom/.git/
-    [blah blah]
-    $ cd serverdom
-    $ git clone http://github.com/tautologistics/node-htmlparser.git
-    Initialized empty Git repository in /.../serverdom/node-htmlparser/.git/
-    $ node test/domtest.js
-    completed
-    $ cat test/domtest.js
-    "I see! It works like a browser DOM, but you start with 'new Document(...)'"
-
-To check that dom/js works in the same way as the browser, just load
-`test/test.html` into your browser. It will run the test suite against the a
-real DOM. The results should be the same.
+that doesn't make your behaviour sane, only justifiably insane ;-)
 
 Comments, complaints, etc: [ joe at getahead dot org ]
