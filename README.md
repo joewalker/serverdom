@@ -7,10 +7,9 @@ About ServerDOM
 **License**: Apache v2  
 
 ServerDOM is an implementation of the DOM in JavaScript that lives on the server
-rather than in the browser.
-
-ServerDOM uses tautologistics node-htmlparser to do the nasty work of HTML
-parsing.
+rather than in the browser. ServerDOM uses tautologistics
+[node-htmlparser](http://github.com/tautologistics/node-htmlparser) to do the
+nasty work of HTML parsing.
 
 
 Why?
@@ -73,7 +72,7 @@ will be relying on help making it better though.
 How do I get started?
 ---------------------
 
-* Install [Node] (http://nodejs.org/)
+* Install [Node](http://nodejs.org/)
 * Install and use ServerDOM:
 
     $ git clone git@github.com:joewalker/serverdom.git
