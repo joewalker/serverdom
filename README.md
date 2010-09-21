@@ -84,4 +84,8 @@ How do I get started?
     $ cat test/domtest.js
     "I see! It works like a browser DOM, but you start with 'new Document(...)'"
 
+To check that dom/js works in the same way as the browser, just load
+`test/test.html` into your browser. It will run the test suite against the a
+real DOM. The results should be the same.
+
 Comments, complaints, etc: [ joe at getahead dot org ]
